@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAY-LU-L0X">
+                                <rect key="frame" x="85" y="483" width="204" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JrG-vS-kBr"/>
+                                </constraints>
+                                <state key="normal" title="Change Background Color">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gzd-wp-8jW" kind="presentation" identifier="ColorPickerPresent" id="1Cp-QR-fcw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gAY-LU-L0X" secondAttribute="bottom" constant="154" id="0IC-St-5jv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gAY-LU-L0X" secondAttribute="trailing" constant="70" id="NR9-fv-9ce"/>
+                            <constraint firstItem="gAY-LU-L0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="YtU-2B-do5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="63"/>
+        </scene>
+        <!--Color Picker View Controller-->
+        <scene sceneID="TLh-Og-p1x">
+            <objects>
+                <viewController id="Gzd-wp-8jW" customClass="ColorPickerViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CSI-ZD-WOf"/>
+                        <viewControllerLayoutGuide type="bottom" id="cbN-mD-TpE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y5L-FQ-c0s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJW-eQ-eEu">
+                                <rect key="frame" x="164" y="177" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="GQG-t2-GlF"/>
+                                    <constraint firstAttribute="height" constant="30" id="rD7-uw-HFd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="blueButtonClicked:" destination="Gzd-wp-8jW" eventType="touchUpInside" id="ygh-kF-sJb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-bY-ZFw">
+                                <rect key="frame" x="164" y="234" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tg1-LH-FqP"/>
+                                    <constraint firstAttribute="width" constant="46" id="kkJ-4u-F5w"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="yellowButtonClicked:" destination="Gzd-wp-8jW" eventType="touchUpInside" id="Pem-L0-I5v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfU-tb-4FH">
+                                <rect key="frame" x="148.5" y="56" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeX-t7-7uJ">
+                                <rect key="frame" x="164" y="120" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="59s-DT-wr8"/>
+                                    <constraint firstAttribute="height" constant="30" id="ktN-sv-Gva"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="redButtonClicked:" destination="Gzd-wp-8jW" eventType="touchUpInside" id="2qO-E7-HS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BJW-eQ-eEu" secondAttribute="trailing" constant="149" id="39W-xI-jFM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TeX-t7-7uJ" secondAttribute="trailing" constant="149" id="GRd-Nw-J3n"/>
+                            <constraint firstItem="TeX-t7-7uJ" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="LqU-q8-z86"/>
+                            <constraint firstItem="ZNB-bY-ZFw" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="Max-Fa-x55"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZNB-bY-ZFw" secondAttribute="trailing" constant="149" id="Ruf-Xi-78M"/>
+                            <constraint firstItem="gfU-tb-4FH" firstAttribute="top" secondItem="CSI-ZD-WOf" secondAttribute="bottom" constant="36" id="Ucx-E3-f5b"/>
+                            <constraint firstItem="TeX-t7-7uJ" firstAttribute="top" secondItem="gfU-tb-4FH" secondAttribute="bottom" constant="43" id="WQH-1v-tcB"/>
+                            <constraint firstItem="gfU-tb-4FH" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="Xpi-Og-KJw"/>
+                            <constraint firstItem="ZNB-bY-ZFw" firstAttribute="top" secondItem="BJW-eQ-eEu" secondAttribute="bottom" constant="27" id="YQg-Sm-xrz"/>
+                            <constraint firstItem="BJW-eQ-eEu" firstAttribute="top" secondItem="TeX-t7-7uJ" secondAttribute="bottom" constant="27" id="YWA-aO-FzC"/>
+                            <constraint firstItem="BJW-eQ-eEu" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="i0b-4B-Kap"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQf-Pc-UJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="63"/>
+        </scene>
+    </scenes>
+</document>
