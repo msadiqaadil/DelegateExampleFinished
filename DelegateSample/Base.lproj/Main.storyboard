@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAY-LU-L0X">
-                                <rect key="frame" x="85" y="483" width="204" height="30"/>
+                                <rect key="frame" x="97.5" y="483" width="180" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JrG-vS-kBr"/>
@@ -39,8 +38,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gAY-LU-L0X" secondAttribute="bottom" constant="154" id="0IC-St-5jv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gAY-LU-L0X" secondAttribute="trailing" constant="70" id="NR9-fv-9ce"/>
-                            <constraint firstItem="gAY-LU-L0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="YtU-2B-do5"/>
+                            <constraint firstItem="gAY-LU-L0X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbW-xE-Ayd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -102,17 +100,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="BJW-eQ-eEu" secondAttribute="trailing" constant="149" id="39W-xI-jFM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TeX-t7-7uJ" secondAttribute="trailing" constant="149" id="GRd-Nw-J3n"/>
-                            <constraint firstItem="TeX-t7-7uJ" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="LqU-q8-z86"/>
-                            <constraint firstItem="ZNB-bY-ZFw" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="Max-Fa-x55"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZNB-bY-ZFw" secondAttribute="trailing" constant="149" id="Ruf-Xi-78M"/>
+                            <constraint firstItem="ZNB-bY-ZFw" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="0lQ-Vg-c8h"/>
+                            <constraint firstItem="TeX-t7-7uJ" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="4yR-8O-07r"/>
                             <constraint firstItem="gfU-tb-4FH" firstAttribute="top" secondItem="CSI-ZD-WOf" secondAttribute="bottom" constant="36" id="Ucx-E3-f5b"/>
                             <constraint firstItem="TeX-t7-7uJ" firstAttribute="top" secondItem="gfU-tb-4FH" secondAttribute="bottom" constant="43" id="WQH-1v-tcB"/>
-                            <constraint firstItem="gfU-tb-4FH" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="Xpi-Og-KJw"/>
                             <constraint firstItem="ZNB-bY-ZFw" firstAttribute="top" secondItem="BJW-eQ-eEu" secondAttribute="bottom" constant="27" id="YQg-Sm-xrz"/>
                             <constraint firstItem="BJW-eQ-eEu" firstAttribute="top" secondItem="TeX-t7-7uJ" secondAttribute="bottom" constant="27" id="YWA-aO-FzC"/>
-                            <constraint firstItem="BJW-eQ-eEu" firstAttribute="leading" secondItem="Y5L-FQ-c0s" secondAttribute="leadingMargin" constant="148" id="i0b-4B-Kap"/>
+                            <constraint firstItem="BJW-eQ-eEu" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="bzd-QD-8nC"/>
+                            <constraint firstItem="gfU-tb-4FH" firstAttribute="centerX" secondItem="Y5L-FQ-c0s" secondAttribute="centerX" id="uRI-Jf-422"/>
                         </constraints>
                     </view>
                 </viewController>
